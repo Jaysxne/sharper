@@ -7,12 +7,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NakamaClient" Version="3.13.0" />
-    <PackageReference Include="SteamMultiplayerPeer" Version="1.0.4" />
   </ItemGroup>
 <ItemGroup>
-	<Reference Include="Facepunch.Steamworks.Win64" Condition="'$(Configuration)' == 'Debug' and $([MSBuild]::IsOSPlatform('Windows'))">
-		<HintPath>.godot\mono\temp\bin\Debug\Facepunch.Steamworks.Win64.dll</HintPath>
-	</Reference>
 	<Reference Include="Facepunch.Steamworks.Win64" Condition="'$(Configuration)' == 'Release' and $([MSBuild]::IsOSPlatform('Windows'))">
 		<HintPath>.godot\mono\temp\bin\Release\Facepunch.Steamworks.Win64.dll</HintPath>
 	</Reference>

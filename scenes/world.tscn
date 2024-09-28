@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=3 uid="uid://c1grqm7nyq0vs"]
+
+[ext_resource type="PackedScene" uid="uid://c385sctw4742c" path="res://scenes/player.tscn" id="1_0sqjq"]
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_y2sg6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fkono"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_6o6oq"]
+sky_material = SubResource("ProceduralSkyMaterial_fkono")
+
+[sub_resource type="Environment" id="Environment_pisci"]
+background_mode = 2
+sky = SubResource("Sky_6o6oq")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hqo6f"]
+albedo_color = Color(0.099986, 0.099986, 0.099986, 1)
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_y2sg6")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pisci")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(7.61446, 0, 0, 0, 0.1, 0, 0, 0, 10.1688, -4.8736, -0.172223, -2.46834)
+use_collision = true
+size = Vector3(12, 1, 7)
+material = SubResource("StandardMaterial3D_hqo6f")
+
+[node name="CSGS" type="Node" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGS"]
+transform = Transform3D(1, 0, 0, 0, 3.6136, 0, 0, 0, 1, 0, 1.71827, -3.66755)
+use_collision = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGS"]
+transform = Transform3D(1, 0, 0, 0, 3.6136, 0, 0, 0, 1, 7.61742, 1.71827, -3.66755)
+use_collision = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGS"]
+transform = Transform3D(1, 0, 0, 0, 3.6136, 0, 0, 0, 1, 4.02243, 1.71827, -10.3845)
+use_collision = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGS"]
+transform = Transform3D(1, 0, 0, 0, 3.6136, 0, 0, 0, 1, 4.02243, 1.71827, 8.75889)
+use_collision = true
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGS"]
+transform = Transform3D(1, 0, 0, 0, 3.6136, 0, 0, 0, 1, -9.01359, 1.71827, 8.75889)
+use_collision = true
+
+[node name="Player" parent="." instance=ExtResource("1_0sqjq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.46359, 0.863725, 0.259525)
+
+[editable path="Player"]

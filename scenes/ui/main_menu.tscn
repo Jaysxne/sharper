@@ -1,0 +1,252 @@
+[gd_scene load_steps=9 format=3 uid="uid://cpytjc715hgw3"]
+
+[ext_resource type="Script" path="res://scripts/Background.cs" id="1_d8a4e"]
+[ext_resource type="Script" path="res://scenes/ui/LoginMenu.cs" id="2_cqujp"]
+[ext_resource type="Script" path="res://scenes/ui/RegisterMenu.cs" id="2_ybumf"]
+[ext_resource type="Texture2D" uid="uid://d3pcig08gugp4" path="res://assets/images/spinner-of-dots.png" id="4_svypx"]
+[ext_resource type="Script" path="res://scenes/ui/Indicator.cs" id="5_t2dcg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrqad"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.762404, 0.762404, 0.762404, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+shadow_color = Color(1, 1, 1, 0.290196)
+shadow_size = 3
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="Theme" id="Theme_3g00i"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/constants/outline_size = 2
+Button/styles/normal = SubResource("StyleBoxFlat_rrqad")
+
+[sub_resource type="LabelSettings" id="LabelSettings_hp202"]
+font_color = Color(0.685876, 0, 0.00114782, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00908181, 0.0103113, 0.0543617, 1)
+script = ExtResource("1_d8a4e")
+metadata/_edit_lock_ = true
+
+[node name="Indicator" type="Sprite2D" parent="."]
+position = Vector2(1088, 64)
+scale = Vector2(0.078125, 0.078125)
+texture = ExtResource("4_svypx")
+script = ExtResource("5_t2dcg")
+
+[node name="OnlineMenus" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LoginMenu" type="Control" parent="OnlineMenus" node_paths=PackedStringArray("serverBtn", "clientBtn", "emailEdit", "passwordEdit", "indicator", "warningLabel")]
+layout_mode = 1
+anchors_preset = 0
+script = ExtResource("2_cqujp")
+serverBtn = NodePath("ServerBtn")
+clientBtn = NodePath("ClientBtn")
+emailEdit = NodePath("EmailEdit")
+passwordEdit = NodePath("PasswordEdit")
+indicator = NodePath("../../Indicator")
+warningLabel = NodePath("WarningMessage")
+
+[node name="ServerBtn" type="Button" parent="OnlineMenus/LoginMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1047.0
+offset_top = 585.0
+offset_right = 1105.0
+offset_bottom = 616.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Server"
+
+[node name="ClientBtn" type="Button" parent="OnlineMenus/LoginMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 544.0
+offset_top = 435.0
+offset_right = 602.0
+offset_bottom = 466.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_3g00i")
+text = "Login"
+
+[node name="EmailEdit" type="LineEdit" parent="OnlineMenus/LoginMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 260.0
+offset_right = 774.0
+offset_bottom = 291.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter your email..."
+
+[node name="PasswordEdit" type="LineEdit" parent="OnlineMenus/LoginMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 336.0
+offset_right = 774.0
+offset_bottom = 367.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter your password..."
+secret = true
+
+[node name="WarningMessage" type="Label" parent="OnlineMenus/LoginMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 305.0
+offset_top = 528.0
+offset_right = 857.0
+offset_bottom = 551.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_hp202")
+horizontal_alignment = 1
+
+[node name="RegisterMenu" type="Control" parent="OnlineMenus" node_paths=PackedStringArray("emailEdit", "usernameEdit", "passwordEdit", "createBtn", "indicator", "warningLabel")]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+script = ExtResource("2_ybumf")
+emailEdit = NodePath("EmailEdit")
+usernameEdit = NodePath("UsernameEdit")
+passwordEdit = NodePath("PasswordEdit")
+createBtn = NodePath("RegisterBtn")
+indicator = NodePath("../../Indicator")
+warningLabel = NodePath("WarningMessage")
+
+[node name="RegisterBtn" type="Button" parent="OnlineMenus/RegisterMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 523.0
+offset_top = 435.0
+offset_right = 581.0
+offset_bottom = 466.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_3g00i")
+text = "Create Account"
+
+[node name="EmailEdit" type="LineEdit" parent="OnlineMenus/RegisterMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 364.0
+offset_top = 260.0
+offset_right = 754.0
+offset_bottom = 291.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter your email..."
+
+[node name="UsernameEdit" type="LineEdit" parent="OnlineMenus/RegisterMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 364.0
+offset_top = 316.0
+offset_right = 754.0
+offset_bottom = 347.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter your username..."
+
+[node name="PasswordEdit" type="LineEdit" parent="OnlineMenus/RegisterMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 364.0
+offset_top = 372.0
+offset_right = 754.0
+offset_bottom = 403.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter your password..."
+secret = true
+
+[node name="WarningMessage" type="Label" parent="OnlineMenus/RegisterMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 305.0
+offset_top = 528.0
+offset_right = 857.0
+offset_bottom = 551.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_hp202")
+horizontal_alignment = 1
+
+[node name="ServerListings" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

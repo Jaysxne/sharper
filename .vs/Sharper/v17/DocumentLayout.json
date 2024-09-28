@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Games\\Godot\\Projects\\sharper\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|c:\\games\\godot\\projects\\sharper\\nakamamultiplayerpeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|solutionrelative:nakamamultiplayerpeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\LoginMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\ui\\LoginMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|c:\\games\\godot\\projects\\sharper\\sharper.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|solutionrelative:sharper.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\RegisterMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\ui\\RegisterMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|c:\\games\\godot\\projects\\sharper\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\Indicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\ui\\Indicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|c:\\games\\godot\\projects\\sharper\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\MainLoginButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scenes\\ui\\MainLoginButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|c:\\games\\godot\\projects\\sharper\\scripts\\networking\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|solutionrelative:scripts\\networking\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|c:\\games\\godot\\projects\\sharper\\scripts\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD58E686-28CE-47D0-9A72-D888E11D03B0}|Sharper.csproj|solutionrelative:scripts\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NakamaMultiplayerPeer.cs",
-              "DocumentMoniker": "C:\\GAMES\\GODOT\\PROJECTS\\SHARPER\\NakamaMultiplayerPeer.cs",
-              "RelativeDocumentMoniker": "NakamaMultiplayerPeer.cs",
-              "ToolTip": "C:\\GAMES\\GODOT\\PROJECTS\\SHARPER\\NakamaMultiplayerPeer.cs",
-              "RelativeToolTip": "NakamaMultiplayerPeer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "MainLoginButton.cs",
+              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\MainLoginButton.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\MainLoginButton.cs",
+              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\MainLoginButton.cs",
+              "RelativeToolTip": "scenes\\ui\\MainLoginButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T13:00:42.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sharper.csproj",
-              "DocumentMoniker": "C:\\GAMES\\GODOT\\PROJECTS\\SHARPER\\Sharper.csproj",
-              "RelativeDocumentMoniker": "Sharper.csproj",
-              "ToolTip": "C:\\GAMES\\GODOT\\PROJECTS\\SHARPER\\Sharper.csproj",
-              "RelativeToolTip": "Sharper.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-22T05:16:20.522Z",
+              "WhenOpened": "2024-09-28T10:45:56.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Title": "Indicator.cs",
+              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\Indicator.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\Indicator.cs",
+              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\Indicator.cs",
+              "RelativeToolTip": "scenes\\ui\\Indicator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T03:05:41.817Z",
+              "WhenOpened": "2024-09-28T10:15:38.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LoginMenu.cs",
+              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\LoginMenu.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\LoginMenu.cs",
+              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\LoginMenu.cs",
+              "RelativeToolTip": "scenes\\ui\\LoginMenu.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAowEYAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T07:01:10.622Z"
+              "WhenOpened": "2024-09-28T09:28:11.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterMenu.cs",
+              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\RegisterMenu.cs",
+              "RelativeDocumentMoniker": "scenes\\ui\\RegisterMenu.cs",
+              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\scenes\\ui\\RegisterMenu.cs",
+              "RelativeToolTip": "scenes\\ui\\RegisterMenu.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwDkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T09:27:13.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Background.cs",
+              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\scripts\\Background.cs",
+              "RelativeDocumentMoniker": "scripts\\Background.cs",
+              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\scripts\\Background.cs",
+              "RelativeToolTip": "scripts\\Background.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T09:04:28.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Network.cs",
+              "DocumentMoniker": "C:\\Games\\Godot\\Projects\\sharper\\scripts\\networking\\Network.cs",
+              "RelativeDocumentMoniker": "scripts\\networking\\Network.cs",
+              "ToolTip": "C:\\Games\\Godot\\Projects\\sharper\\scripts\\networking\\Network.cs",
+              "RelativeToolTip": "scripts\\networking\\Network.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA1wEwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T08:32:41.936Z",
+              "EditorCaption": ""
             }
           ]
         }
